@@ -1,0 +1,247 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8-plain
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+BE 218 Assignment 1
+\end_layout
+
+\begin_layout Author
+Parth Deshpande 18836
+\end_layout
+
+\begin_layout Section
+Implementation details
+\end_layout
+
+\begin_layout Enumerate
+The constants were defined as given.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The contact rate 
+\begin_inset Formula $\beta$
+\end_inset
+
+ was found to be 0.3 after varying it from 0.1 to 0.8 in steps of 0.1.
+\end_layout
+
+\begin_layout Enumerate
+The total number of days was taken to be 600.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The multidimensional array that holds the values of the population in the
+ different compartments was initialized with given values.
+\end_layout
+
+\begin_layout Enumerate
+The values in the array were updated in a main loop over the total number
+ of days according to the given dynamical equations.
+\end_layout
+
+\begin_layout Enumerate
+The answers to the questions asked were calculated and printed.
+\end_layout
+
+\begin_layout Enumerate
+The results were plotted on a graph.
+\end_layout
+
+\begin_layout Enumerate
+The packages 
+\begin_inset Formula $numpy$
+\end_inset
+
+ and 
+\begin_inset Formula $matplotlib.pyplot$
+\end_inset
+
+ were used.
+\end_layout
+
+\begin_layout Section
+Numerical results
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Graphics
+	filename LInearGraph1.png
+	scale 95
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Linear-scale graph
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align left
+\begin_inset Graphics
+	filename AsinhGraph1.png
+	scale 95
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align left
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Asinh-scale graph
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+beta_trial_and_error: 0.3 
+\end_layout
+
+\begin_layout Enumerate
+num_days_to_peak: 234 
+\end_layout
+
+\begin_layout Enumerate
+num_days_greater_than_1000_cases: 182
+\end_layout
+
+\begin_layout Section
+Discussion of the results
+\end_layout
+
+\begin_layout Enumerate
+Roughly 40 million people got infected and recovered.
+ 
+\end_layout
+
+\end_body
+\end_document
